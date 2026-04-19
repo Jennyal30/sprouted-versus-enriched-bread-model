@@ -20,13 +20,16 @@ How does grain processing (sprouting vs enrichment) influence micronutrient bioa
 Defines nutrient and phytate profiles for:
 - Enriched bread
 - Sprouted grains
-
-### 2. Absorption Model
+### 2. Processing Layer
+Simulates food processing effects:
+- Enrichment (no phytate reduction)
+- Sprouting (reduced phytate levels)
+### 3. Absorption Model
 Applies a phytate inhibition function:
 - Higher phytate → lower absorption
 - Linear correction approximation
 
-### 3. Comparative Analysis
+### 4. Comparative Analysis
 Computes absorbable iron and zinc for both systems.
 
 ---
@@ -51,8 +54,13 @@ This model reflects simplified dietary bioavailability assessment approaches use
 - plant-based nutrition research
 - dietary optimisation frameworks
 
----
+--
+## Limitations
+- Simplified linear absorption model
+- No enzymatic kinetics included
+- Static phytate reduction assumptions
 
+--
 ## Link to Broader Work
 This project complements a larger bioavailability-aware modelling framework that extends nutrient analysis beyond intake-based metrics into absorbable nutrient estimation.
 
