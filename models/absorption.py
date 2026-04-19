@@ -1,11 +1,9 @@
-# Bioavailability model for bread systems
+# Bioavailability model (post-processing)
 
 def absorbable_nutrients(product):
     phytate = product["phytate"]
 
-    # simple inhibition function
     factor = 1 - (0.25 * phytate)
-
     if factor < 0:
         factor = 0
 
